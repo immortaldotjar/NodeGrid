@@ -15,6 +15,10 @@ const App = () => {
 
       {/* <Navbar/> */}
       <Home/>
+
+      {/* <NavBar/> */}
+      <NoteCompGrp/>
+      {/* <NoteCard/> */}
     </div>
   )
 }
