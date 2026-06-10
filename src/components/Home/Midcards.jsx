@@ -1,0 +1,13 @@
+import React from 'react'
+
+const Midcards = ({icon,head,para}) => {
+  return (
+    <div>
+      <span>{icon}</span>
+      <h2 className='font-black text-[20px] '>{head}</h2>
+      <p className='mt-3 text-sm text-gray-600 w-fit'>{para}</p>
+    </div>
+  )
+}
+
+export default Midcards

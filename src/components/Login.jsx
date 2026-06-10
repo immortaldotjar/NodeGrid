@@ -3,7 +3,7 @@ import React from 'react'
 const Login = (props) => {
     return (
         <div className='flex items-center justify-center py-15'>
-            <div className="flex flex-col gap-3 p-9 w-[400px] bg-gray-50 border border-black-200 p-2 rounded-3xl ">
+            <div className="flex flex-col gap-3 p-9 w-400px bg-gray-50 border border-black-200 p-2 rounded-3xl ">
                 <h1 className="text-2xl font-bold">{props.head}</h1>
                 <p>{props.text}</p>
                 <label>Email</label>

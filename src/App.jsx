@@ -3,7 +3,8 @@ import Login from './Components/Login'
 import Signup from './Components/Signup'
 import MergedCard from './Components/MergedCard'
 import NavBar from "./components/NavBar"
-import Home from './Components/Home'
+import NoteCard from './Components/NoteCard'
+import Home from './Components/Home/Home'
 
 const App = () => {
   return (
@@ -13,11 +14,10 @@ const App = () => {
       {/* <Signup/> */}
 
       {/* <MergedCard/> */}
-      
-      <Home/>
 
       {/* <NoteCompGrp/> */}
       {/* <NoteCard/> */}
+      <Home/>
     </div>
   )
 }
