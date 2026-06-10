@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg-canvas" width="350" height="350" viewBox="0 0 48 48"><style>
+
+/* ── #path-2 (path) ── */
+@keyframes path-2--translate {
+   27.27% { translate:    0.00px    0.00px; }
+   36.36% { translate:    0.00px   15.00px; }
+   45.45% { translate:    0.00px   15.00px; }
+   54.55% { translate:    0.00px   30.00px; }
+   63.64% { translate:    0.00px   30.00px; }
+   72.73% { translate:   15.00px   30.00px; }
+   90.91% { translate:   15.00px   30.00px; }
+     100% { translate:   30.00px   30.00px; }
+}
+#path-2 {
+  transform-box    : fill-box;
+  transform-origin : center;
+  animation        : path-2--translate 5.5s linear infinite;
+}
+
+/* ── #path-3 (path) ── */
+@keyframes path-3--translate {
+      20% { translate:    0.00px    0.00px; }
+      30% { translate:    0.00px   15.00px; }
+      40% { translate:    0.00px   15.00px; }
+      50% { translate:   15.00px   15.00px; }
+      70% { translate:   15.00px   15.00px; }
+      80% { translate:   30.00px   15.00px; }
+      90% { translate:   30.00px   15.00px; }
+     100% { translate:   30.00px    0.00px; }
+}
+#path-3 {
+  transform-box    : fill-box;
+  transform-origin : center;
+  animation        : path-3--translate 5s linear infinite;
+}
+
+/* ── #path-4 (path) ── */
+@keyframes path-4--translate {
+   11.11% { translate:    0.00px    0.00px; }
+   22.22% { translate:   15.00px    0.00px; }
+   44.44% { translate:   15.00px    0.00px; }
+   55.56% { translate:   30.00px    0.00px; }
+   66.67% { translate:   30.00px    0.00px; }
+   77.78% { translate:   30.00px  -15.00px; }
+   88.89% { translate:   30.00px  -15.00px; }
+     100% { translate:   30.00px  -30.00px; }
+}
+#path-4 {
+  transform-box    : fill-box;
+  transform-origin : center;
+  animation        : path-4--translate 4.5s linear infinite;
+}
+
+/* ── #path-6 (path) ── */
+@keyframes path-6--translate {
+   27.27% { translate:    0.00px    0.00px; }
+   36.36% { translate:    0.00px  -15.00px; }
+   45.45% { translate:    0.00px  -15.00px; }
+   54.55% { translate:    0.00px  -30.00px; }
+   63.64% { translate:    0.00px  -30.00px; }
+   72.73% { translate:  -15.00px  -30.00px; }
+   90.91% { translate:  -15.00px  -30.00px; }
+     100% { translate:  -30.00px  -30.00px; }
+}
+#path-6 {
+  transform-box    : fill-box;
+  transform-origin : center;
+  animation        : path-6--translate 5.5s linear infinite;
+}
+
+/* ── #path-7 (path) ── */
+@keyframes path-7--translate {
+      20% { translate:    0.00px    0.00px; }
+      30% { translate:    0.00px  -15.00px; }
+      40% { translate:    0.00px  -15.00px; }
+      50% { translate:  -15.00px  -15.00px; }
+      70% { translate:  -15.00px  -15.00px; }
+      80% { translate:  -30.00px  -15.00px; }
+      90% { translate:  -30.00px  -15.00px; }
+     100% { translate:  -30.00px    0.00px; }
+}
+#path-7 {
+  transform-box    : fill-box;
+  transform-origin : center;
+  animation        : path-7--translate 5s linear infinite;
+}
+
+/* ── #path-8 (path) ── */
+@keyframes path-8--translate {
+   11.11% { translate:    0.00px    0.00px; }
+   22.22% { translate:  -15.00px    0.00px; }
+   44.44% { translate:  -15.00px    0.00px; }
+   55.56% { translate:  -30.00px    0.00px; }
+   66.67% { translate:  -30.00px    0.00px; }
+   77.78% { translate:  -30.00px   15.00px; }
+   88.89% { translate:  -30.00px   15.00px; }
+     100% { translate:  -30.00px   30.00px; }
+}
+#path-8 {
+  transform-box    : fill-box;
+  transform-origin : center;
+  animation        : path-8--translate 4.5s linear infinite;
+}
+
+</style><g xmlns="http://www.w3.org/2000/svg" id="g" style="translate: 0px; rotate: 0deg; scale: 1;"><path d="M15,4.324l0,9.353c0,0.73 -0.593,1.324 -1.324,1.324l-9.353,0c-0.73,0 -1.324,-0.593 -1.324,-1.324l0,-9.353c0,-0.73 0.593,-1.324 1.324,-1.324l9.353,0c0.73,0 1.324,0.593 1.324,1.324Z" style="fill: rgb(54, 56, 55); stroke: rgb(54, 56, 55); stroke-width: 0.83px; translate: 11.13px 30px; rotate: 0deg; scale: 1;" id="path-2"/><path d="M15,19.324l0,9.353c0,0.73 -0.593,1.324 -1.324,1.324l-9.353,0c-0.73,0 -1.324,-0.593 -1.324,-1.324l0,-9.353c0,-0.73 0.593,-1.324 1.324,-1.324l9.353,0c0.73,0 1.324,0.593 1.324,1.324Z" style="fill: none; stroke: rgb(54, 56, 55); stroke-width: 0.83px; translate: 26.13px 15px; rotate: 0deg; scale: 1;" id="path-3"/><path d="M15,34.324l0,9.353c0,0.73 -0.593,1.324 -1.324,1.324l-9.353,0c-0.73,0 -1.324,-0.593 -1.324,-1.324l0,-9.353c0,-0.73 0.593,-1.324 1.324,-1.324l9.353,0c0.73,0 1.324,0.593 1.324,1.324Z" style="fill: none; stroke: rgb(54, 56, 55); stroke-width: 0.83px; translate: 30px -15px; rotate: 0deg; scale: 1;" id="path-4"/></g><g xmlns="http://www.w3.org/2000/svg" id="g" style="translate: 0px; rotate: 0deg; scale: 1;"><path d="M33.035,43.676l0,-9.353c0,-0.73 0.593,-1.324 1.324,-1.324l9.353,0c0.73,0 1.324,0.593 1.324,1.324l0,9.353c0,0.73 -0.593,1.324 -1.324,1.324l-9.353,0c-0.73,0 -1.324,-0.593 -1.324,-1.324Z" style="fill: rgb(54, 56, 55); stroke: rgb(54, 56, 55); stroke-width: 0.83px; translate: -11.13px -30px; rotate: 0deg; scale: 1;" id="path-6"/><path d="M33.035,28.676l0,-9.353c0,-0.73 0.593,-1.324 1.324,-1.324l9.353,0c0.73,0 1.324,0.593 1.324,1.324l0,9.353c0,0.73 -0.593,1.324 -1.324,1.324l-9.353,0c-0.73,0 -1.324,-0.593 -1.324,-1.324Z" style="fill: none; stroke: rgb(54, 56, 55); stroke-width: 0.83px; translate: -26.13px -15px; rotate: 0deg; scale: 1;" id="path-7"/><path d="M33.035,13.676l0,-9.353c0,-0.73 0.593,-1.324 1.324,-1.324l9.353,0c0.73,0 1.324,0.593 1.324,1.324l0,9.353c0,0.73 -0.593,1.324 -1.324,1.324l-9.353,-0c-0.73,0 -1.324,-0.593 -1.324,-1.324Z" style="fill: none; stroke: rgb(54, 56, 55); stroke-width: 0.83px; translate: -30px 15px; rotate: 0deg; scale: 1;" id="path-8"/></g><path xmlns="http://www.w3.org/2000/svg" d="M30,19.324l0,9.353c0,0.73 -0.593,1.324 -1.324,1.324l-9.353,0c-0.73,0 -1.324,-0.593 -1.324,-1.324l0,-9.353c0,-0.73 0.593,-1.324 1.324,-1.324l9.353,0c0.73,0 1.324,0.593 1.324,1.324Z" style="fill: rgb(54, 56, 55); stroke: rgb(54, 56, 55); stroke-width: 0.83px; translate: 0px; rotate: 0deg; scale: 1;" id="path-9"/></svg>
