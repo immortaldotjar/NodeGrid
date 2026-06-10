@@ -13,7 +13,7 @@ const Hometext = () => {
         ON  
         <br />
       </p>
-      <p className='text-6xl font-bold bg-gray-500 w-md p-2 rotate-1 border border-black 200'>TACTILE    
+      <p className='text-6xl font-bold bg-gray-500 w-md p-2 -rotate-1 border-dashed border border-black 200'>TACTILE    
         <br />
         CARDS.
       </p>
