@@ -13,10 +13,10 @@ const Headsection = () => {
             {cont:"TRY LIVE DEMO BELOW"}
         ]
     return (
-        <div className='bg-gray-300 h-full px-8.5 py-9'>
+        <div className='bg-muted-olive h-full px-8.5 py-9'>
             <p className='h-fit w-fit bg-white rounded-2xl p-2'>TACTICLE, HIGH-PRODUCTIVITY SPACE</p>
-            <p className='text-6xl font-bold w-1/3 mt-3'>DITCH DOCUMENT BLOAT. WRITE ON</p>
-            <p className='text-6xl font-bold w-1/3 bg-gray-600 -rotate-2 border-b-4 border-black border-r-4 '>TACTICAL CARDS.</p>
+            <p className='text-6xl font-extrabold w-1/3 mt-3'>DITCH DOCUMENT BLOAT. WRITE ON</p>
+            <p className='text-6xl font-extrabold w-1/3 bg-card -rotate-1 border border-dashed border-gray-700 p-1 px-4 shadow-[4px_4px_1px_black] shadow-black '>TACTICAL CARDS.</p>
 
             <p className='w-1/3 text-gray-500 mt-5'>NodeGrid reimagines organizations aroung high-density index cards. Capture, classify, search and recall ideas in workspace built for speed and visual focus.</p>
              <div className='flex gap-4 mt-5'>
