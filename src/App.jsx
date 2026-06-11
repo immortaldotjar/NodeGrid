@@ -10,6 +10,15 @@ import Button from './components/Button'
 const App = () => {
   return (
     <div>
+      <NavBar/>
+      {/* <Login/> */}
+      {/* <Signup/> */}
+
+      {/* <MergedCard/> */}
+
+      {/* <NoteCompGrp/> */}
+      {/* <NoteCard/> */}
+      <Home/>
       
     </div>
   )
