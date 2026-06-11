@@ -1,23 +1,16 @@
 import React from 'react'
-import Login from './Components/Login'
-import Signup from './Components/Signup'
-import MergedCard from './Components/MergedCard'
+import Login from './components/Login'
+import Signup from './components/Signup'
+
 import NavBar from "./components/NavBar"
-import Home from './Components/Home'
+import Home from './components/Home'
+import Button from './components/Button'
+
 
 const App = () => {
   return (
     <div>
-      <NavBar/>
-      {/* <Login/> */}
-      {/* <Signup/> */}
-
-      {/* <MergedCard/> */}
       
-      <Home/>
-
-      {/* <NoteCompGrp/> */}
-      {/* <NoteCard/> */}
     </div>
   )
 }
