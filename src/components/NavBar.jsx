@@ -4,8 +4,8 @@ import Logo from './Logo'
 import Button from './Button'
 const NavBar = () => {
   return (
-    <div className='w-dvw h-18 flex shadow border-b-gray-400 border-b z-10 scrollbar-gutter-stable'>
-      <ul className='flex items-center md:w-dvw px-6 bg-olive-light space-x-3.5'>
+    <div className=' h-18 flex shadow border-olive-200 border-b z-10 scrollbar-gutter-stable'>
+      <ul className='flex items-center md:w-dvw px-6 bg-primary space-x-3.5'>
         <li className='mr-auto'>
           <Link to = "/" className = "font-extrabold text-2xl flex space-x-2.5" style={{fontFamily : "Orbitron"}}>
             <Logo/><span>NoteGrid</span>

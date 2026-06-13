@@ -2,14 +2,20 @@
 @import "tailwindcss";
 
 @theme{
+  --color-primary : #fafafa;
+  --color-secondary : #f4f5f0;
   --color-muted-olive :#ddded9;
   --color-olive-light :#e3e2e1;
   --color-card :#d1cecb;
+  --background-hero: url("./assets/bg_hero.jpeg");
+  --color-foreground: #fafaf9;
 }
 
 body{
   font-family: "Nunito";
+  
 }
+
 
 .center{
   display: flex;
