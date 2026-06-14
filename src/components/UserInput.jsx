@@ -3,7 +3,7 @@ import { LuEye, LuEyeClosed, LuMail } from "react-icons/lu";
 
 const UserInput = ({ label, type, ph }) => {
     const [show, setShow] = useState(false)
-    const spanStyle = 'flex border border-gray-200 bg-muted-olive shadow rounded p-1.5 px-2.5 h-10 mt-1 '
+    const spanStyle = 'flex border border-gray-200 bg-secondary shadow rounded p-1.5 px-2.5 h-10 mt-1 '
     const inputStyle = 'outline-none w-full text-xs font-bold h-full'
     return (
         <div className=''>
