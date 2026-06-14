@@ -2,7 +2,7 @@ import NavBar from '../NavBar'
 
 const Footer = () => {
   return (
-    <div className='flex justify-between p-9 mt-15 border-t border-gray-300'>
+    <div className='flex items-center px-8 justify-between h-15 border-t border-gray-300'>
         <div className="flex gap-1">
         <p className='font-bold' style={{fontFamily : "Orbitron"}}>NoteGrid</p>
         <p className='text-gray-600'>-The tacticle card organizer.</p>
