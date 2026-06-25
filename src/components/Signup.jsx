@@ -11,7 +11,7 @@ const data = [
 const Signup = () => {
   return (
     <div className='center h-lvh bg-secondary p-10' >
-      <div className='h-fit w-[400px] shadow-[0_0_1px_black] p-8 border-2 border-dashed shadow-[5px_5px] shadow-zinc-700 rounded-2xl border-gray-800 bg-primary space-y-3.5 shadow-2xs'>
+      <div className='h-fit w-100 p-8 border-2 border-dashed shadow-[5px_5px] shadow-zinc-700 rounded-2xl border-gray-800 bg-primary space-y-3.5'>
         <UserHead text={"create your account"} subtext={"Are your ready to save your Notes? - It's Free!"}/>
         {
           data.map((item, index) => (

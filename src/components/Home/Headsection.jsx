@@ -4,7 +4,7 @@ import Homebtns from './Homebtns'
 import Button from '../Button'
 import { BsStars } from "react-icons/bs";
 import { motion } from "motion/react"
-
+import {Link} from "react-router-dom"
 const Headsection = () => {
     const cards = [
         { head: "100MS", line: "SEARCH RESPONSE" },
@@ -27,18 +27,13 @@ const Headsection = () => {
                             ease: "easeInOut",
                             repeat: Infinity,  
                             repeatDelay: 2,
-                            
                         },
                     }}
 
                     className='text-6xl font-extrabold bg-card  border-4 border-dashed border-zinc-600 p-1 px-4 shadow-[8px_8px] shadow-zinc-800 my-2.5
 '>TACTICAL CARDS.</motion.p>
                 <p className='text-zinc-500 my-8'>NodeGrid reimagines organizations aroung high-density index cards. Capture, classify, search and recall ideas in workspace built for speed and visual focus.</p>
-                <div className='flex gap-4 mt-5'>
-                    {btns.map((cont, index) => (
-                        <Button key={index} text={cont.cont} />
-                    ))}
-                </div>
+                <Link to = "/signup"> <Button text={"START TAKING NOTES INSTANTLY"}/></Link>
                 <div className='flex gap-4 mt-5'>
                     {cards.map((cards, index) => (
                         <Homecard key={index} head={cards.head} line={cards.line} />

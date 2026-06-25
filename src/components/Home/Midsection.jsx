@@ -1,6 +1,6 @@
 import React from 'react'
 import Midcards from './Midcards'
-import { LuLayoutGrid,LuShield } from "react-icons/lu";
+import { LuLayoutGrid,LuLayers3 } from "react-icons/lu";
 import { TiFlashOutline } from "react-icons/ti";
 
 const Midsection = () => {
@@ -13,13 +13,13 @@ const Midsection = () => {
       },
       {
         icon:<TiFlashOutline/>, 
-        heading:"ULTRA LOW-LATENCY SYNC ", 
-        para:"Powered by Next.js Server Actions and supabase, every single edit. addition, or color change resolve instantly and presists securely"
+        heading:"REAL-TIME COLLABORATION", 
+        para:"Edits, highlights, and notes update instantly across all devices, ensuring your workspace stays perfectly in sync without delays."
       },
       {
-        icon:<LuShield/>, 
-        heading:"UNCOMPROMISED SECURITY", 
-        para:"Robust Row-Level Security(RLS) built into Supabase guarantees that only you can select, modify, or delet your tactical cards. "
+        icon:<LuLayers3 />, 
+        heading:"MINIMALIST DESIGN", 
+        para:"A clean, distraction-free interface that highlights your ideas, not the clutter—crafted for clarity, balance, and effortless usability."
       }
     ]
   return (
