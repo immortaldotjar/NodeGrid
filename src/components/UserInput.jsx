@@ -11,7 +11,7 @@ const UserInput = ({ label, type, ph }) => {
             {(type === "password") ? (
                 <span className={spanStyle}>
                     <input type={(!show) ? type : "text"} placeholder={ph} className={inputStyle} /> 
-                    <span className='h-full w-fit center cursor-pointer' onClick={() => setShow(!show)}>
+                    <span className='h-full w-fit center cursor-pointer transition' onClick={() => setShow(!show)}>
                         {!show ? <LuEyeClosed /> : <LuEye />}
                     </span>
                 </span>
