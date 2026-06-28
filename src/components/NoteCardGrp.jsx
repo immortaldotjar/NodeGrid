@@ -1,7 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import NoteCard from './NoteCard'
-const NoteCardGrp = ({ cards }) => {
+import { cardcontext } from './Context/Contextdata'
+const NoteCardGrp = ({ cards, heading, content, show, headnote,para,fundel }) => {
+  const inputdata = useContext(cardcontext)
   const [active, setActive] = useState("all")
+  // console.log(headnote);
+  // console.log(para);
+  
   const grp = ["all", "work", "personal", "ideas", "quick"]
   return (
     <div className='w-full h-full space-y-2'>
@@ -11,9 +16,19 @@ const NoteCardGrp = ({ cards }) => {
         </ul>
       </div>
       <div className='border border-dashed border-zinc-300 grid grid-cols-2 gap-4 p-1'>
-        {cards.map((item,index) => {
-          <NoteCard />
+        {show.map((elem, index) => {
+          return (
+            <NoteCard
+              key={index}
+              head={elem.head}
+              cont={elem.detail}
+              deletefun = {fundel}
+              idx={index}
+            />
+          );
         })}
+
+        <h1>{inputdata}</h1>
       </div>
     </div>
   )

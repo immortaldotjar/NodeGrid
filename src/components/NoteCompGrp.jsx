@@ -3,18 +3,32 @@ import NoteHead from './NoteHead'
 import NoteInput from './NoteInput'
 import NoteLabel from './NoteLabel'
 import Button from './Button'
-const NoteCompGrp = () => {
+const NoteCompGrp = ({valueone,valuetwo,setvalueone,setvaluetwo,fun}) => {
     const [activeColor, setActiveColor] = useState("bg-yellow-200")
-
     const opt = ["Work", "Personal", "Ideas", "Quick"]
     const section = "space-y-1.5 flex flex-col w-[50%]"
     const color = ["bg-yellow-200", "bg-green-200", "bg-blue-200", "bg-purple-200"]
-
+//     const [head,setHead] = useState("")
+//     const [detail,setDetail] = useState("") 
+//     const btnclick = () => {
+//   console.log("Head:", head);
+//   console.log("Detail:", detail);
+// };
     return (
         <div className='md:w-full h-full border border-gray-200 p-8 space-y-5 rounded bg-gray-10 sm:w-full shadow-[2px_2px] shadow-zinc-100'>
             <NoteHead head={"create new note"} />
-            <NoteInput title={"note title"} ph={"Enter title..."} type={"text"} />
-            <NoteInput title={"note details"} ph={"Write your note content here..."} type={"text"} h={5} />
+            <NoteInput 
+            title={"note title"} 
+            ph={"Enter title..."} 
+            type={"text"}
+            value={valueone}
+            setvalue={setvalueone}/>
+            <NoteInput title={"note details"} 
+            ph={"Write your note content here..."} 
+            type={"text"} 
+            h={5}
+            value={valuetwo}
+            setvalue={setvaluetwo}/>
             <div className='flex space-x-4.5'>
                 <div className={section}>
                     <NoteLabel text={"category"} />
@@ -41,7 +55,7 @@ const NoteCompGrp = () => {
             </div>
             <div>
 
-                <Button text={"Create note"} />
+                <Button text={"Create note"} funbtn={fun} />
             </div>
         </div>
     )
