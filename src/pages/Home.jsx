@@ -3,10 +3,9 @@ import Headsection from '../components/Home/Headsection'
 import Midsection from '../components/Home/Midsection'
 const Home = () => {
   return (
-    <div>
+    <div className='bg-amber-600'>
         <Headsection/>
         <Midsection/>
-
     </div>
   )
 }

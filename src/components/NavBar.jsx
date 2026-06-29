@@ -7,7 +7,7 @@ const NavBar = () => {
 
 
   return (
-    <div className=' h-18 flex shadow border-olive-200 border-b z-10 scrollbar-gutter-stable'>
+    <div className='md:h-18 h-30 flex shadow border-olive-200 border-b z-10 scrollbar-gutter-stable'>
       <ul className='flex items-center md:w-dvw px-6 bg-primary space-x-3.5'>
         <li className="mr-auto font-extrabold text-2xl flex space-x-2.5" style={{ fontFamily: "Orbitron" }}
           onClick={() => {

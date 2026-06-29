@@ -25,7 +25,7 @@ const NoteCardGrp = () => {
         </ul>
       </div>
 
-      <div className={`border border-dashed border-zinc-300 ${filterCard.length ? "grid grid-cols-2 gap-4" : "flex justify-center text-zinc-400"}  p-1 min-h-106`}>
+      <div className={`border border-dashed border-zinc-300 ${filterCard.length ? "grid md:grid-cols-2 grid-cols-1 gap-4" : "flex justify-center text-zinc-400"}  p-1 min-h-106`}>
         {filterCard.length ? (
           filterCard.map((item, index) => (
             <NoteCard
