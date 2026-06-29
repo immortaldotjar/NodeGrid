@@ -25,8 +25,8 @@ const Midsection = () => {
   return (
     <div className='p-9 h-full font-sans bg-primary '>
       <p className='font-bold text-olive-500 text-sm tracking-wider'>ENGINEERED FOR HIGH THROUGHPUT</p>
-      <p className='font-extrabold text-3xl w-1/2'>A MINIMALIST NOTE ENVIRONMENT FOR DEEP INTTELLECTUAL WORK.</p>
-      <div className="flex mt-8 gap-10 ">
+      <p className='font-extrabold text-3xl md:w-1/2'>A MINIMALIST NOTE ENVIRONMENT FOR DEEP INTTELLECTUAL WORK.</p>
+      <div className="grid md:grid-cols-3 mt-8 gap-10">
         {midcard.map((mid,index)=>(
           <Midcards key={index} icon={mid.icon} head={mid.heading} para={mid.para}/>
         ))}

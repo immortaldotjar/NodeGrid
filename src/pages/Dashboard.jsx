@@ -36,11 +36,11 @@ const Dashboard = () => {
 
     return (
         <CardContext.Provider value={{ cards, addCard, saveCard, deleteCard, edit, startEdit }}>
-            <div className="flex h-full w-full p-6 space-x-10">
-                <div className="w-1/3 h-full">
+            <div className="md:flex h-full w-full p-6 space-x-10 space-y-10">
+                <div className="md:w-1/3 w-full h-full">
                     <NoteCompGrp />
                 </div>
-                <div className="w-2/3 h-full">
+                <div className="md:w-2/3 w-full h-full">
                     <NoteCardGrp />
                 </div>
             </div>

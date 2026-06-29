@@ -5,7 +5,7 @@ const NoteCard = ({ category, head, cont, color, handleEdit, deletefun }) => {
 
 
     return (
-        <div className={`p-5 h-60 space-y-3 rounded shadow-[2px_2px] shadow-zinc-300 sm:w-full ${color}`}>
+        <div className={`p-5 h-50 space-y-3 rounded shadow-[2px_2px] shadow-zinc-300 sm:w-full ${color}`}>
             <div className="flex">
                 <div className="w-fit h-fit border rounded-full border-zinc-400 text-xs font-bold bg-white/70 px-3 py-0.5 mr-auto">
                     {category}
@@ -18,7 +18,7 @@ const NoteCard = ({ category, head, cont, color, handleEdit, deletefun }) => {
             <div className="font-extrabold uppercase">
                 <h3>{head}</h3>
             </div>
-            <div className="h-25 overflow-x-hidden scrollbar-thin scrollbar-thumb-amber-400/50">
+            <div className="h-18 overflow-x-hidden scrollbar-thin scrollbar-thumb-amber-400/50">
                 <p>{cont}</p>
             </div>
             <hr />
