@@ -4,30 +4,26 @@ import NoteCardGrp from '../components/NoteCardGrp';
 import { CardContext } from '../components/Context/Context';
 
 const Dashboard = () => {
-    const [cards, setCards] = useState([])
+    const [cards, setCards] = useState(() => {
+        const data = localStorage.getItem("cards");
+        return data ? JSON.parse(data) : [];
+    })
     const [edit, setEdit] = useState(null);
 
-    useEffect(() => {
-        const data = localStorage.getItem("cards")
-        if (data) setCards(JSON.parse(data))
-    }, [])
 
     useEffect(() => {
         localStorage.setItem("cards", JSON.stringify(cards));
     }, [cards]);
 
-
     const addCard = (head, detail, category, color) => {
         setCards(data => [...data, { head, detail, category, color }]);
-    };
+    }
 
     const saveCard = (head, detail, category, color) => {
         setCards(data =>
-            data.map((c, i) =>
-                i === edit ? { head, detail, category, color } : c
-            )
+            data.map((c, i) => i === edit ? { head, detail, category, color } : c)
         );
-        setEdit(null);
+        setEdit(null)
     };
 
     const deleteCard = (index) => {

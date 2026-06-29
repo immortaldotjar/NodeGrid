@@ -25,18 +25,20 @@ const NoteCardGrp = () => {
         </ul>
       </div>
 
-      <div className="border border-dashed border-zinc-300 grid grid-cols-2 gap-4 p-1">
-        {filterCard.map((item, index) => (
-          <NoteCard
-            key={index}
-            category={item.category}
-            head={item.head}
-            cont={item.detail}
-            color={item.color}
-            handleEdit={() => startEdit(index)}
-            deletefun={() => deleteCard(index)}
-          />
-        ))}
+      <div className={`border border-dashed border-zinc-300 ${filterCard.lenght ? "grid grid-cols-2 gap-4" : "flex justify-center text-zinc-400"}  p-1 min-h-106`}>
+        {filterCard.lenght ? (
+          filterCard.map((item, index) => (
+            <NoteCard
+              key={index}
+              category={item.category}
+              head={item.head}
+              cont={item.detail}
+              color={item.color}
+              handleEdit={() => startEdit(index)}
+              deletefun={() => deleteCard(index)}
+            />
+          ))
+        ) : (<h1 className='center'>No cards here... Create a note</h1>)}
       </div>
     </div>
   )
