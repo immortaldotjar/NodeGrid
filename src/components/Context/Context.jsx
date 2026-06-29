@@ -1,3 +1,3 @@
 import React, { createContext } from 'react'
 
-export const cardcontext = createContext("");
+export const CardContext = createContext("");
