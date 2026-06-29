@@ -1,34 +1,42 @@
 import React, { useContext, useState } from 'react'
 import NoteCard from './NoteCard'
-import { cardcontext } from './Context/Contextdata'
-const NoteCardGrp = ({ cards, heading, content, show, headnote,para,fundel }) => {
-  const inputdata = useContext(cardcontext)
+import { CardContext } from './Context/Context'
+
+const NoteCardGrp = () => {
+  const { cards, deleteCard, startEdit } = useContext(CardContext)
   const [active, setActive] = useState("all")
-  // console.log(headnote);
-  // console.log(para);
-  
-  const grp = ["all", "work", "personal", "ideas", "quick"]
+
+  const grp = ["all", "Work", "Personal", "Ideas", "Quick"]
+  const filterCard = active === "all" ? cards : cards.filter(c => c.category === active)
+
   return (
-    <div className='w-full h-full space-y-2'>
-      <div className='border-b border-zinc-200 w-full'>
-        <ul className='flex uppercase text-xs font-extrabold w-full' >
-          {grp.map((item, index) => { return <li key={index} className={`center cursor-pointer h-full w-20 py-3.5 px-2 transition select-none ${active === item ? "text-black border-b-2" : "text-zinc-500"}`} onClick={() => { setActive(item) }}>{item}</li> })}
+    <div className="w-full h-full space-y-2">
+      <div className="border-b border-zinc-200 w-full">
+        <ul className="flex uppercase text-xs font-extrabold w-full">
+          {grp.map((item, index) => (
+            <li
+              key={index}
+              className={`center cursor-pointer h-full w-20 py-3.5 px-2 transition select-none ${active === item ? "text-black border-b-2" : "text-zinc-500"}`}
+              onClick={() => setActive(item)}
+            >
+              {item}
+            </li>
+          ))}
         </ul>
       </div>
-      <div className='border border-dashed border-zinc-300 grid grid-cols-2 gap-4 p-1'>
-        {show.map((elem, index) => {
-          return (
-            <NoteCard
-              key={index}
-              head={elem.head}
-              cont={elem.detail}
-              deletefun = {fundel}
-              idx={index}
-            />
-          );
-        })}
 
-        <h1>{inputdata}</h1>
+      <div className="border border-dashed border-zinc-300 grid grid-cols-2 gap-4 p-1">
+        {filterCard.map((item, index) => (
+          <NoteCard
+            key={index}
+            category={item.category}
+            head={item.head}
+            cont={item.detail}
+            color={item.color}
+            handleEdit={() => startEdit(index)}
+            deletefun={() => deleteCard(index)}
+          />
+        ))}
       </div>
     </div>
   )
